@@ -1,0 +1,19 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: magenta;
+    color: blueviolet;
+    font-size: 5rem;
+
+    min-height: 100vh;
+    width: auto;
+
+    position: relative;
+}
+
+footer {
+    text-align: center;
+    font-size: 1rem;
+    color: white;
+}
+
+@import 'home.scss'
