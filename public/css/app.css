@@ -1,0 +1,25 @@
+body {
+  font-family: "Nunito", sans-serif;
+  background-color: magenta;
+  color: blueviolet;
+  font-size: 5rem;
+  min-height: 100vh;
+  width: auto;
+  position: relative;
+}
+
+footer {
+  text-align: center;
+  font-size: 1rem;
+  color: white;
+}
+
+.home_center_div {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+}
+.home_center_div .home_h1 {
+  color: white;
+  font-size: 4rem;
+}
+
