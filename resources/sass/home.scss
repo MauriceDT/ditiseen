@@ -1,10 +1,34 @@
-.home_center_div {
-background-color: rgba($color: #FFF, $alpha: 0.3);
-border-radius: 10px;
+.home_background_div {
+    //_______________________________Dimensions
+    width: auto;
+    height: 100vh;
 
-    .home_h1 {
-        color: white;
-        font-size: 4rem;
-    }
+    //_______________________________Background
+    background: linear-gradient(to bottom right, rgba(38,255,219,0.3), rgba(255,85,38,0.5)), url("/images/space_bg.jpeg");
+    background: no-repeat, contain;
+
+    //_______________________________Centering stuff
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .home_center_div {
+        background-color: rgba($color: #FFF, $alpha: 0.8);
+        box-shadow: 2px 4px 5px rgba($color: #000000, $alpha: 0.8);
+        border-radius: 10px;
+
+        width: 65rem;
+        height: auto;
+
+        padding: 4rem;
+
+            .home_h1 {
+                text-align: center;
+
+                font-size: 3rem;
+                color: rgb(65, 65, 65);
+            }
+        }
 }
+
 

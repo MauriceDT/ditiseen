@@ -1,11 +1,14 @@
 body {
   font-family: "Nunito", sans-serif;
-  background-color: magenta;
-  color: blueviolet;
   font-size: 5rem;
+  color: blueviolet;
+  background-color: magenta;
   min-height: 100vh;
   width: auto;
   position: relative;
+  overflow: hidden;
+  margin: 0%;
+  padding: 0%;
 }
 
 footer {
@@ -14,12 +17,26 @@ footer {
   color: white;
 }
 
-.home_center_div {
-  background-color: rgba(255, 255, 255, 0.3);
-  border-radius: 10px;
+.home_background_div {
+  width: auto;
+  height: 100vh;
+  background: linear-gradient(to bottom right, rgba(38, 255, 219, 0.3), rgba(255, 85, 38, 0.5)), url("/images/space_bg.jpeg");
+  background: no-repeat, contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.home_center_div .home_h1 {
-  color: white;
-  font-size: 4rem;
+.home_background_div .home_center_div {
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  width: 65rem;
+  height: auto;
+  padding: 4rem;
+}
+.home_background_div .home_center_div .home_h1 {
+  text-align: center;
+  font-size: 3rem;
+  color: #414141;
 }
 
