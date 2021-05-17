@@ -13,10 +13,22 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+//_________________________________________Home___//
 Route::get('/', function () {
     return view('home');
 });
 
 Route::get('/eerste', function () {
     return view('eerste');
+});
+
+
+
+//_________________________________________JS Pages___//
+Route::get('/js_one', function () {
+    return view('js_one');
+});
+Route::get('/js_two', function () {
+    return view('js_two');
 });

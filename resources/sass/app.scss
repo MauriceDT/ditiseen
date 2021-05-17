@@ -1,13 +1,20 @@
 body {
+    //__________________________________Color and fonts
     font-family: 'Nunito', sans-serif;
-    background-color: magenta;
-    color: blueviolet;
     font-size: 5rem;
 
+    color: blueviolet;
+    background-color: magenta;
+
+    //__________________________________Dimensions
     min-height: 100vh;
     width: auto;
 
+    //__________________________________Other
     position: relative;
+    overflow: hidden;
+    margin: 0%;
+    padding: 0%;
 }
 
 footer {
@@ -15,5 +22,10 @@ footer {
     font-size: 1rem;
     color: white;
 }
+
+//______________________________________Variables___//
+$color-one:             #26ffdb;
+$color-two:             #ff5526;
+$color-three:           #ff26a5;
 
 @import 'home.scss'
