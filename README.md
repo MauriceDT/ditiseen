@@ -8,7 +8,7 @@ I have used Laravel, and will continue to add to this project using php,scss,js 
 Below I will share the steps i've made to bring the project to where it is today, with the most recent steps/additions shown from the top.
 ________________________________________________________________________________________________//
 
-
+- Added button with hover / focus-within transitions. Additional styling will be added later
 
 - Buttons added to several pages
 
@@ -18,7 +18,7 @@ ________________________________________________________________________________
 
 - Added comments to .scss files
 
-- Added 'partials' folder to project, 'header' and 'footer' partials have been made.
+- Added 'partials' folder to project, 'header' and 'footer' partials have been made
 
 - CSS href added to header
 

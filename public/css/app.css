@@ -17,6 +17,10 @@ footer {
   color: white;
 }
 
+a {
+  text-decoration: none;
+}
+
 .home_background_div {
   width: auto;
   height: 100vh;
@@ -26,7 +30,8 @@ footer {
   justify-content: center;
   align-items: center;
 }
-.home_background_div .home_center_div {
+
+.home_center_div {
   background-color: rgba(255, 255, 255, 0.8);
   box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.8);
   border-radius: 10px;
@@ -34,9 +39,105 @@ footer {
   height: auto;
   padding: 4rem;
 }
-.home_background_div .home_center_div .home_h1 {
+
+.home_h1 {
   text-align: center;
   font-size: 3rem;
   color: #414141;
+}
+
+.card {
+  width: 18rem;
+  max-height: 25rem;
+  padding: 2rem 0 0;
+  color: white;
+  background-image: url("/images/js_bg.png");
+  background-size: contain;
+  font-size: 1.3rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  position: relative;
+  transition: transform 500ms ease;
+}
+
+.card:hover,
+.card:focus-within {
+  transform: scale(1.05);
+}
+
+.card:hover .card-title::after,
+.card:focus-within .card-title::after {
+  transform: scaleX(1);
+}
+
+.card:hover .card-content,
+.card:focus-within .card-content {
+  transform: translateY(0);
+  transition-delay: 500ms;
+}
+
+.card:hover .card-content > *:not(.card-title),
+.card:focus-within .card-content > *:not(.card-title) {
+  opacity: 1;
+  transition-delay: 1000ms;
+}
+
+.card:focus-within .card-content {
+  transition-duration: 0ms;
+}
+
+.card-button {
+  color: white;
+  background-color: #ff5526;
+  padding: 0.5em 1.25em;
+  position: absolute;
+  right: 5%;
+  bottom: 5%;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: inline;
+  text-decoration: none;
+  border: none;
+  border-radius: 0.25em;
+}
+
+.card-button:hover,
+.card-button:focus {
+  color: #ff5526;
+  background-color: white;
+}
+
+.card-content {
+  --padding: 1.5rem;
+  padding: var(--padding);
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
+  transform: translateY(55%);
+  transition: transform 500ms ease;
+}
+
+.card-content > *:not(.card-title) {
+  opacity: 0;
+  transition: opacity 500ms linear;
+}
+
+.card-title {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  font-size: 1.5rem;
+  position: relative;
+}
+
+.card-title::after {
+  content: "";
+  height: 4px;
+  width: calc(100% + var(--padding));
+  background: #ff5526;
+  position: absolute;
+  left: calc(var(--padding) * -1);
+  bottom: -5%;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: 500ms ease;
 }
 
