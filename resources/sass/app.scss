@@ -28,4 +28,10 @@ $color-one:             #26ffdb;
 $color-two:             #ff5526;
 $color-three:           #ff26a5;
 
+//______________________________________General Setup___//
+a {
+    text-decoration: none;
+}
+
+
 @import 'home.scss'
