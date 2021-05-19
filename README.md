@@ -8,6 +8,16 @@ I have used Laravel, and will continue to add to this project using php,scss,js 
 Below I will share the steps i've made to bring the project to where it is today, with the most recent steps/additions shown from the top.
 ________________________________________________________________________________________________//
 
+- Added JS logic for the timer (countdown), works with getElementByClassName, tried to chain the classes..but couldn't get it to work. Also tried with querySelecterAll and then chaining the same classes, after this failed, I copied the logic 3 times over with different classnames. (it works)
+
+- Renamed a bunch of stuff for consistency
+
+- Added JS script asset loader to the header partial (it works)
+
+- Added correct routing to JS-One (the reload page)
+
+- Changed some routes in web
+
 - Added button with hover / focus-within transitions. Additional styling will be added later
 
 - Buttons added to several pages

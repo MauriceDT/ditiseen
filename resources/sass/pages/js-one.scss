@@ -1,0 +1,38 @@
+.js-one_main-div {
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(27, 27, 27);
+    padding: 10rem;
+    position: relative;
+}
+
+.js-one_refresh-text {
+    color: white;
+    font-size: 4rem;
+}
+
+.js-one_h1 {
+    font-size: 7rem;
+    font-weight: bold;
+    color: white;
+    margin: 0%;
+    padding: 0%;
+}
+
+//_________________________________________Faded-Timers___//
+.js-one_bg-faded-timer{
+    color: rgba($color: #ffffff, $alpha: 0.1);
+    font-size: 44rem;
+
+    position: absolute;
+    left: 44%;
+    bottom: -28%;
+}
+.js-one_bg-faded-timer2{
+    color: rgba($color: #ffffff, $alpha: 0.3);
+    font-size: 20rem;
+
+    position: absolute;
+    left: 15%;
+    bottom: 10%;
+}

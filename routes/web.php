@@ -26,9 +26,9 @@ Route::get('/eerste', function () {
 
 
 //_________________________________________JS Pages___//
-Route::get('/js_one', function () {
-    return view('js_one');
+Route::get('/js-one', function () {
+    return view('js-one');
 });
-Route::get('/js_two', function () {
-    return view('js_two');
+Route::get('/js-two', function () {
+    return view('js-two');
 });
