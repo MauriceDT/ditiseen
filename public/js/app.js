@@ -1842,6 +1842,8 @@ module.exports = {
 
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
+__webpack_require__(/*! ./pages/js-one */ "./resources/js/pages/js-one.js");
+
 /***/ }),
 
 /***/ "./resources/js/bootstrap.js":
@@ -1872,6 +1874,33 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 //     cluster: process.env.MIX_PUSHER_APP_CLUSTER,
 //     forceTLS: true
 // });
+
+/***/ }),
+
+/***/ "./resources/js/pages/js-one.js":
+/*!**************************************!*\
+  !*** ./resources/js/pages/js-one.js ***!
+  \**************************************/
+/***/ (() => {
+
+var counter = 10;
+setInterval(function () {
+  document.getElementsByClassName('js-one_timer')[0].innerText = counter;
+  counter--;
+  if (counter == 0) location.reload();
+}, 1000);
+var counter2 = 10;
+setInterval(function () {
+  document.getElementsByClassName('js-one_timer2')[0].innerText = counter2;
+  counter2--;
+  if (counter2 == 0) location.reload();
+}, 1000);
+var counter3 = 10;
+setInterval(function () {
+  document.getElementsByClassName('js-one_timer3')[0].innerText = counter3;
+  counter3--;
+  if (counter3 == 0) location.reload();
+}, 1000);
 
 /***/ }),
 

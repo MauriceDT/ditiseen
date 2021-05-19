@@ -4,7 +4,7 @@ body {
     font-size: 5rem;
 
     color: blueviolet;
-    background-color: magenta;
+    background-color: black;
 
     //__________________________________Dimensions
     min-height: 100vh;
@@ -32,6 +32,27 @@ $color-three:           #ff26a5;
 a {
     text-decoration: none;
 }
+//_________________________________Button___//
+.mau-button {
+    color: white;
+    background-color: $color-two;
+    padding: 0.5em 1.25em;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: inline;
+    text-decoration: none;
+    border: none;
+    border-radius: 0.25em;
+
+    transition: transform 200ms ease;
+}
+.mau-button:hover,
+.mau-button:focus {
+    transform: scale(1.05);
+    color: $color-two;
+    background-color: white;
+}
 
 
-@import 'home.scss'
+@import 'home.scss';
+@import 'pages/js-one.scss';

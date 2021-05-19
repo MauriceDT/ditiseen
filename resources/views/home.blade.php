@@ -8,11 +8,11 @@
             <div class="card-content">
                 <h2 class="card-title">JavaScript - 001</h2>
                     <p class="card-body">Automatic refresher added to the page with raw JS</p>
-                <a href="/js_one"><button class="card-button">JS 001</button></a>
+                <a href="/js-one"><button class="card-button">JS 001</button></a>
             </div>
         </div>
 
-        <a href="/js_two"><button>js Two</button></a>
+        <a href="/js-two"><button>js Two</button></a>
 
     </div>
 </div>

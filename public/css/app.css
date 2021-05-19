@@ -2,7 +2,7 @@ body {
   font-family: "Nunito", sans-serif;
   font-size: 5rem;
   color: blueviolet;
-  background-color: magenta;
+  background-color: black;
   min-height: 100vh;
   width: auto;
   position: relative;
@@ -21,10 +21,30 @@ a {
   text-decoration: none;
 }
 
+.mau-button {
+  color: white;
+  background-color: #ff5526;
+  padding: 0.5em 1.25em;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: inline;
+  text-decoration: none;
+  border: none;
+  border-radius: 0.25em;
+  transition: transform 200ms ease;
+}
+
+.mau-button:hover,
+.mau-button:focus {
+  transform: scale(1.05);
+  color: #ff5526;
+  background-color: white;
+}
+
 .home_background_div {
   width: auto;
   height: 100vh;
-  background: linear-gradient(to bottom right, rgba(38, 255, 219, 0.3), rgba(255, 85, 38, 0.5)), url("/images/space_bg.jpeg");
+  background: linear-gradient(to bottom right, rgba(38, 255, 219, 0.3), rgba(255, 85, 38, 0.5));
   background: no-repeat, contain;
   display: flex;
   justify-content: center;
@@ -139,5 +159,42 @@ a {
   transform: scaleX(0);
   transform-origin: left;
   transition: 500ms ease;
+}
+
+.js-one_main-div {
+  height: 100vh;
+  width: 100%;
+  background-color: #1b1b1b;
+  padding: 10rem;
+  position: relative;
+}
+
+.js-one_refresh-text {
+  color: white;
+  font-size: 4rem;
+}
+
+.js-one_h1 {
+  font-size: 7rem;
+  font-weight: bold;
+  color: white;
+  margin: 0%;
+  padding: 0%;
+}
+
+.js-one_bg-faded-timer {
+  color: rgba(255, 255, 255, 0.1);
+  font-size: 44rem;
+  position: absolute;
+  left: 44%;
+  bottom: -28%;
+}
+
+.js-one_bg-faded-timer2 {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 20rem;
+  position: absolute;
+  left: 15%;
+  bottom: 10%;
 }
 
