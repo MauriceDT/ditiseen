@@ -1844,6 +1844,8 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 __webpack_require__(/*! ./pages/js-one */ "./resources/js/pages/js-one.js");
 
+__webpack_require__(/*! ./pages/js-two */ "./resources/js/pages/js-two.js");
+
 /***/ }),
 
 /***/ "./resources/js/bootstrap.js":
@@ -1883,24 +1885,60 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
   \**************************************/
 /***/ (() => {
 
-var counter = 10;
-setInterval(function () {
-  document.getElementsByClassName('js-one_timer')[0].innerText = counter;
-  counter--;
-  if (counter == 0) location.reload();
-}, 1000);
-var counter2 = 10;
-setInterval(function () {
-  document.getElementsByClassName('js-one_timer2')[0].innerText = counter2;
-  counter2--;
-  if (counter2 == 0) location.reload();
-}, 1000);
-var counter3 = 10;
-setInterval(function () {
-  document.getElementsByClassName('js-one_timer3')[0].innerText = counter3;
-  counter3--;
-  if (counter3 == 0) location.reload();
-}, 1000);
+if (document.URL.includes("ditiseen.test/js-one")) {
+  var counter = 10;
+  setInterval(function () {
+    document.getElementsByClassName('js-one_timer')[0].innerText = counter;
+    counter--;
+    if (counter == 0) location.reload();
+  }, 1000);
+  var counter2 = 10;
+  setInterval(function () {
+    document.getElementsByClassName('js-one_timer2')[0].innerText = counter2;
+    counter2--;
+    if (counter2 == 0) location.reload();
+  }, 1000);
+  var counter3 = 10;
+  setInterval(function () {
+    document.getElementsByClassName('js-one_timer3')[0].innerText = counter3;
+    counter3--;
+    if (counter3 == 0) location.reload();
+  }, 1000);
+}
+
+/***/ }),
+
+/***/ "./resources/js/pages/js-two.js":
+/*!**************************************!*\
+  !*** ./resources/js/pages/js-two.js ***!
+  \**************************************/
+/***/ (() => {
+
+if (document.URL.includes("ditiseen.test/js-two")) {
+  //__________________________________________________________Variables___//
+  var addToDoButton = document.getElementById('addToDo');
+  var toDoContainer = document.getElementById('toDoContainer');
+  var inputField = document.getElementById('inputField'); //__________________________________________________________Events___//
+
+  addToDoButton.addEventListener('click', function () {
+    var paragraph = document.createElement('p'); //______________________Will_add_a_class_called_'js-two..'___//
+
+    paragraph.classList.add('js-two_p-style'); //______________________Sets_innerText_to_value_of_inputField___//
+
+    paragraph.innerText = inputField.value;
+    toDoContainer.appendChild(paragraph); //_______________________Resets_inputField_value_to_none___//
+
+    inputField.value = ""; //_______________________Puts_line_through_the_text_after_click___//
+
+    paragraph.addEventListener('click', function () {
+      paragraph.style.textDecoration = "line-through";
+    }); //_______________________Removes_paragraph_after_double_click___//
+
+    paragraph.addEventListener('dblclick', function () {
+      toDoContainer.removeChild(paragraph);
+    });
+  });
+}
 
 /***/ }),
 
