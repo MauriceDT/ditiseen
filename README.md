@@ -10,6 +10,16 @@ ________________________________________________________________________________
 
 - Added JS logic for the timer (countdown), works with getElementByClassName, tried to chain the classes..but couldn't get it to work. Also tried with querySelecterAll and then chaining the same classes, after this failed, I copied the logic 3 times over with different classnames. (it works)
 
+- Absolute mess, slight damage control, hopefully nothing is lost in the process..
+
+- Included all the stuff required for Tailwind
+
+- 'npm install tailwindcss' Might as well try it
+
+- Added JS-two, WIP, but dropping it for now for bigger project
+
+- Wrapped last weeks JS in a check to see if user is on the right page for it to trigger
+
 - Renamed a bunch of stuff for consistency
 
 - Added JS script asset loader to the header partial (it works)

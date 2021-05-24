@@ -12,7 +12,9 @@
             </div>
         </div>
 
-        <a href="/js-two"><button>js Two</button></a>
+
+        <a href="/js-two"><button class="mau-button">JS 002</button></a>
+
 
     </div>
 </div>
