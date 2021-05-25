@@ -8,9 +8,21 @@ I have used Laravel, and will continue to add to this project using php,scss,js 
 Below I will share the steps i've made to bring the project to where it is today, with the most recent steps/additions shown from the top.
 ________________________________________________________________________________________________//
 
-- Added JS logic for the timer (countdown), works with getElementByClassName, tried to chain the classes..but couldn't get it to work. Also tried with querySelecterAll and then chaining the same classes, after this failed, I copied the logic 3 times over with different classnames. (it works)
+- Re-added comments to the JS-two JS Logic
+
+- Changed the styling on the JS-Two page to be more consistent
+
+- Added border-radius variable in app.scss for consistency
+
+- Added 'window.onload' to the JS logic of the To-do page, it now executes after the DOM is fully loaded. This fixed the issue that occured before
+
+- First basics of Tailwind have been added, small styling issues on home-page how now been fixed
+
+- Added new folder 'pages' for scalability, moved the blade files and changes the routes
 
 - Absolute mess, slight damage control, hopefully nothing is lost in the process..
+
+- Added JS logic for the timer (countdown), works with getElementByClassName, tried to chain the classes..but couldn't get it to work. Also tried with querySelecterAll and then chaining the same classes, after this failed, I copied the logic 3 times over with different classnames. (it works)
 
 - Included all the stuff required for Tailwind
 
