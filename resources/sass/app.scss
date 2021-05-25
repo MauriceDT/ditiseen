@@ -33,6 +33,9 @@ $color-one:             #26ffdb;
 $color-two:             #ff5526;
 $color-three:           #ff26a5;
 
+$border-radius-xs:         5px;
+$border-radius-s:         10px;
+
 //______________________________________General Setup___//
 a {
     text-decoration: none;
@@ -47,7 +50,7 @@ a {
     display: inline;
     text-decoration: none;
     border: none;
-    border-radius: 0.25em;
+    border-radius: $border-radius-xs;
 
     transition: transform 200ms ease;
 }
@@ -62,4 +65,3 @@ a {
 @import 'home.scss';
 @import 'pages/js-one.scss';
 @import 'pages/js-two.scss';
-
