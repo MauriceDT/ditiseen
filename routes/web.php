@@ -25,10 +25,15 @@ Route::get('/eerste', function () {
 
 
 
-//_________________________________________JS Pages___//
+//_________________________________________JS_Pages___//
 Route::get('/js-one', function () {
     return view('pages/js-one');
 });
 Route::get('/js-two', function () {
     return view('pages/js-two');
+});
+
+//_________________________________________Vue_Pages___//
+Route::get('/vue-one', function () {
+    return view('pages/vue-one');
 });

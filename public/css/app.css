@@ -31888,7 +31888,7 @@ a {
   background-color: rgba(255, 255, 255, 0.8);
   box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.8);
   border-radius: 10px;
-  width: 65rem;
+  width: 67rem;
   height: auto;
   padding: 4rem;
 }
@@ -31896,6 +31896,7 @@ a {
 .home_h1 {
   text-align: center;
   font-size: 3rem;
+  font-weight: bold;
   color: #414141;
 }
 
@@ -31912,6 +31913,11 @@ a {
   position: relative;
   transition: transform 500ms ease;
   box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.8);
+}
+
+.vue-card {
+  background-image: url("/images/Vue_logo.png");
+  background-size: cover;
 }
 
 .card:hover,
@@ -32091,6 +32097,20 @@ a {
   color: #ff5526;
   background-color: white;
   border-radius: 10px;
+}
+
+.vue-one_main-div {
+  height: 100vh;
+  width: 100%;
+  background-color: #1b1b1b;
+  padding: 10rem;
+  position: relative;
+  color: white;
+  font-weight: bold;
+}
+
+.vue-one_vue-div {
+  font-size: 3rem;
 }
 
 @media (min-width: 640px) {

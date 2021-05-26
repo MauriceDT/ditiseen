@@ -16,6 +16,8 @@
 
     <!-- Scripts -->
     <script type="text/javascript" src="{{ asset('js/app.js') }}"></script>
+    <script src="http://unpkg.com/vue@3.0.2"></script>
+
 </head>
 
 <body>

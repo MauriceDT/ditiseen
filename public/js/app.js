@@ -1846,6 +1846,8 @@ __webpack_require__(/*! ./pages/js-one */ "./resources/js/pages/js-one.js");
 
 __webpack_require__(/*! ./pages/js-two */ "./resources/js/pages/js-two.js");
 
+__webpack_require__(/*! ./pages/vue-one */ "./resources/js/pages/vue-one.js");
+
 /***/ }),
 
 /***/ "./resources/js/bootstrap.js":
@@ -1938,6 +1940,28 @@ if (document.URL.includes("ditiseen.test/js-two")) {
         toDoContainer.removeChild(paragraph);
       });
     });
+  };
+}
+
+/***/ }),
+
+/***/ "./resources/js/pages/vue-one.js":
+/*!***************************************!*\
+  !*** ./resources/js/pages/vue-one.js ***!
+  \***************************************/
+/***/ (() => {
+
+if (document.URL.includes("ditiseen.test/vue-one")) {
+  window.onload = function () {
+    var app = Vue.createApp({
+      data: function data() {
+        return {
+          title: 'The Art of War',
+          author: 'Sun Tzu'
+        };
+      }
+    });
+    app.mount('#app');
   };
 }
 

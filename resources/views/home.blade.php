@@ -16,8 +16,16 @@
             <div class="card">
                 <div class="card-content">
                     <h2 class="card-title">JavaScript - 002</h2>
-                        <p class="card-body">W I P // To Do List</p>
+                        <p class="card-body">Simple 'To Do List', made with raw JS</p>
                     <a href="/js-two"><button class="card-button">JS 002</button></a>
+                </div>
+            </div>
+
+            <div class="card vue-card">
+                <div class="card-content">
+                    <h2 class="card-title">Vue - 001</h2>
+                        <p class="card-body">Calling Dynamic data with Vue</p>
+                    <a href="/vue-one"><button class="card-button">Vue 001</button></a>
                 </div>
             </div>
 
