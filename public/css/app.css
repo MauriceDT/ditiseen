@@ -32107,10 +32107,37 @@ a {
   position: relative;
   color: white;
   font-weight: bold;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.vue-one_main-div h2 {
+  font-size: 3rem;
 }
 
 .vue-one_vue-div {
   font-size: 3rem;
+}
+
+.vue-one_box {
+  padding: 100px;
+  width: 400px;
+  text-align: center;
+  background: #ddd;
+  margin: 20px;
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ff5526;
+}
+
+.vue-one_info-loop {
+  font-size: 1.2rem;
+}
+
+.vue-one_person-h3 {
+  font-size: 1.5rem;
+  color: #ff5526;
 }
 
 @media (min-width: 640px) {
