@@ -2,11 +2,28 @@ My name is Maurice di Tolve, i'm a junior Front End Developer from Groningen, Th
 
 In this project I will be sharing/applying/learning the newest developments in the world of Front End.
 
-I have used Laravel, and will continue to add to this project using php, scss, js and more.
+I have used Laravel, and will continue to add to this project using PHP, SCSS, JS, Vue, Tailwind and more.
 
 
 Below I will share the steps i've made to bring the project to where it is today, with the most recent steps/additions shown from the top.
 ________________________________________________________________________________________________//
+
+
+- A bunch of tailwind-classes were added to the pictures on the vue-one page
+
+- Pictures added to public/images/vue-one, will be called upon by vue
+
+- New 'persons' added to vue-one page and dynamically called
+
+- Introduced several mouse-events to different divs
+
+- Overflows added to vue-one page, content was filling up the page and it was still on hidden previously
+
+- Toggle button added which will show or hide the info on the vue-one page, depending on if the info is already showing, or if its hidden.
+
+- Added additional info including name, age, city and profession
+
+- Adding first conditionals in Vue, seems quite straightforward!
 
 - Error found and fixed, both Blade and Vue use {{  }} syntax, so @ has to be added
 
